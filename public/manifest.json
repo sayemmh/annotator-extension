@@ -1,0 +1,74 @@
+{
+  "version": "0.0.2",
+  "name": "Awesome Highlighter",
+  "manifest_version": 2,
+  "description": "Highlight your selected text",
+  "icons": {
+    "32": "img/icon-32.png",
+    "64": "img/icon-64.png",
+    "128": "img/icon-128.png"
+  },
+  "page_action": {
+    "default_title": "Highlight The Selected Text",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "background": {
+    "scripts": [
+      "js/background_script.bundle.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "run_at": "document_end",
+      "all_frames": false,
+      "js": [
+        "/js/content_script.bundle.js"
+      ],
+      "css": [
+        "/css/ui.css"
+      ]
+    }
+  ],
+  "commands": {
+    "awesome-highlighter-create-highlight-1": {
+      "description": "Create Highlight #1"
+    },
+    "awesome-highlighter-create-highlight-2": {
+      "description": "Create Highlight #2"
+    },
+    "awesome-highlighter-create-highlight-3": {
+      "description": "Create Highlight #3"
+    },
+    "awesome-highlighter-create-highlight-4": {
+      "description": "Create Highlight #4"
+    },
+    "awesome-highlighter-create-highlight-5": {
+      "description": "Create Highlight #5"
+    },
+    "awesome-highlighter-create-highlight-6": {
+      "description": "Create Highlight #6"
+    },
+    "awesome-highlighter-create-highlight-7": {
+      "description": "Create Highlight #7"
+    },
+    "awesome-highlighter-create-highlight-8": {
+      "description": "Create Highlight #8"
+    },
+    "awesome-highlighter-create-highlight-9": {
+      "description": "Create Highlight #9"
+    }
+  },
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "storage",
+    "declarativeContent"
+  ],
+  "homepage_url": "https://github.com/sjmyuan/awesome-highlighter"
+}

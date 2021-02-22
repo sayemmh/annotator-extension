@@ -1,0 +1,57 @@
+{
+  "name": "awesome-highlighter",
+  "version": "0.0.1",
+  "description": "A chrome extension to highlight your selected text",
+  "main": "index.js",
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjmyuan/awesome-highlighter.git"
+  },
+  "keywords": [
+    "Chrome",
+    "Extension",
+    "HTML",
+    "Highlighter"
+  ],
+  "author": "sjmyuan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sjmyuan/awesome-highlighter/issues"
+  },
+  "homepage": "https://github.com/sjmyuan/awesome-highlighter#readme",
+  "dependencies": {
+    "@types/file-saver": "^2.0.1",
+    "@types/rc-slider": "^8.6.5",
+    "@types/react-color": "^3.0.1",
+    "@types/turndown": "^5.0.0",
+    "css-loader": "^3.4.2",
+    "file-loader": "^6.0.0",
+    "file-saver": "^2.0.2",
+    "fuse.js": "^5.2.3",
+    "rc-slider": "^9.2.3",
+    "react": "^16.13.0",
+    "react-color": "^2.18.0",
+    "react-dom": "^16.13.0",
+    "style-loader": "^1.1.3",
+    "styled-components": "^5.0.1",
+    "turndown": "^6.0.0",
+    "turndown-plugin-gfm": "^1.0.2",
+    "url-loader": "^4.0.0",
+    "uuid": "^7.0.2"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.97",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "@types/styled-components": "^5.0.1",
+    "@types/uuid": "^7.0.0",
+    "fs-extra": "^8.1.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.2",
+    "webpack": "^4.41.6",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
